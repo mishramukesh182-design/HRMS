@@ -1,0 +1,22 @@
+<Attendance html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Attendance</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .container { width: 300px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Daily Attendance</h2>
+        <form action="/mark_attendance" method="post">
+            <input type="hidden" name="employee_id" value="123">
+            <p>Ready to mark your attendance for today?</p>
+            <button type="submit">Clock In</button>
+        </form>
+    </div>
+</body>
+</html>
